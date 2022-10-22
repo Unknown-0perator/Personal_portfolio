@@ -3,39 +3,42 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
-
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 16px;
   font-weight: 400;
-
   line-height: 1.7;
+  box-sizing: border-box;
 }
 
 .header {
   background-color: black;
   height: 100vh;
 }
-.text-box {
+.header__text-box {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 20%;
   transform: translate(-10%, -50%);
 }
 .heading-primary {
   color: rgb(0, 255, 0);
+  backface-visibility: hidden;
 }
-.heading-primary-main {
+.heading-primary--main {
+  display: block;
+  margin-bottom: 4rem;
+  font-weight: 600;
+  font-size: 7rem;
+}
+.heading-primary--sub {
   display: block;
   font-weight: 600;
-  font-size: 52px;
-}
-.heading-primary-sub {
-  display: block;
-  font-weight: 600;
-  font-size: 24px;
+  font-size: 1.6rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.4rem;
 }
