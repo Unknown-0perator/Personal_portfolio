@@ -1,41 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=VT323&display=swap");
+
+$color-green: #00ff00;
+$color-black: #000;
+$color-white: #fff;
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
-
+  box-sizing: inherit;
+}
 html {
-  font-size: 62.5%; }
-
+  font-size: 62.5%;
+}
 body {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   line-height: 1.7;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .header {
-  background-color: #000;
-  height: 100vh; }
-
+  background-color: $color-black;
+  height: 100vh;
+}
 .header__text-box {
   position: absolute;
   top: 50%;
   left: 20%;
-  transform: translate(-10%, -50%); }
-
+  transform: translate(-10%, -50%);
+}
 .heading-primary {
-  color: #00ff00;
-  backface-visibility: hidden; }
-
+  color: $color-green;
+  backface-visibility: hidden;
+}
 .heading-primary--main {
   display: block;
   margin-bottom: 4rem;
   font-weight: 600;
-  font-size: 7rem; }
-
+  font-size: 7rem;
+}
 .heading-primary--sub {
   display: block;
   font-weight: 600;
   font-size: 1.6rem;
   text-transform: uppercase;
-  letter-spacing: 0.4rem; }
+  letter-spacing: 0.4rem;
+}

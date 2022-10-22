@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unknown-0perator/Personal_portfolio.git"
+  },
+  "author": "Ahmad Rashid Akhtar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unknown-0perator/Personal_portfolio/issues"
+  },
+  "homepage": "https://github.com/Unknown-0perator/Personal_portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
