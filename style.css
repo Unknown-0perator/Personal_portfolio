@@ -98,11 +98,9 @@ h4 {
   font-weight: 100;
 }
 p {
-  display: inline-block;
-  font-size: 1.5rem;
-  width: 70%;
+  font-size: 1.7rem;
+  margin-top: 2rem;
 }
-
 /****/
 .glitch__header {
   text-transform: uppercase;
@@ -681,4 +679,164 @@ p {
     -webkit-clip-path: polygon(0 -20%, 100% -20%, 100% 0%, 0 0);
     clip-path: polygon(0 -20%, 100% -20%, 100% 0%, 0 0);
   }
+}
+
+#about {
+  margin: 1rem 15%;
+}
+
+.center-text {
+  text-align: center;
+}
+#projects {
+  margin: 1rem 15%;
+}
+
+#contact {
+  margin: 1rem 15%;
+}
+
+.margin__header--bottom {
+  margin-bottom: 5rem;
+  margin-top: 8rem;
+}
+
+/**/
+
+.contact-border {
+  height: 50rem;
+  width: auto;
+  border: #fff solid 0.5rem;
+}
+
+.contact-toolbar {
+  height: 5rem;
+  width: auto;
+  border: #fff solid 0.3rem;
+  background-color: #333;
+}
+
+.termina-title {
+  font-size: 2em;
+}
+.fa-brands {
+  float: right;
+  text-align: center;
+  align-items: center;
+
+  font-size: 3em;
+  padding: 0.4em;
+}
+.fa-brands:hover {
+  color: #00ff00;
+}
+.fa-folder {
+  font-size: 5rem;
+  color: yellow;
+  display: inline-block;
+}
+.project-folders {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  justify-content: center;
+}
+/**/
+textarea {
+  left: -100000rem;
+  position: absolute;
+}
+b {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.cursor {
+  font-size: 12px;
+  color: #00ff00;
+  background-color: #00ff00;
+  position: relative;
+  opacity: 1;
+  height: 1.5em;
+  width: 1rem;
+  max-width: 1rem;
+  transform: translateY(0.4rem);
+  overflow: hidden;
+  text-indent: -0.5rem;
+  display: inline-block;
+  text-decoration: blink;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+#command {
+  cursor: text;
+  height: 5rem;
+  color: #ffffff;
+  padding: 2rem;
+}
+#liner {
+  line-height: 1.3rem;
+  margin-top: -0.2rem;
+  animation: show 0.5s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+  font-size: 2rem;
+}
+#liner::before {
+  color: #ffffff;
+  content: "Hey, what is your name?";
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Cursor End */
+.no-animation {
+  animation: typing 0 steps(30, end);
+}
+.margin {
+  margin-left: 2rem;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.color__secondary {
+  color: #aa9300;
+}
+.command {
+  color: #0000ff;
+  text-shadow: 0 0 5px #0000ff;
+}
+.color__error {
+  color: red;
+}
+.white {
+  color: #fff;
+}
+.inherit,
+a {
+  color: red;
+}
+a {
+  text-decoration: inherit;
+}
+a:hover {
+  background: #fff;
+  color: #000;
+}
+a:focus {
+  outline: 0;
 }

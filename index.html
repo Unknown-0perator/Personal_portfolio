@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8c2d1b64fa.js" crossorigin="anonymous"></script>
     <title>Ahmad Rashid Akhtar</title>
 </head>
 
@@ -51,6 +52,70 @@
         </div>
 
     </header>
+    <section id="about">
+        <h2 class="glitch__header center-text">About</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit aliquid architecto, iste nam exercitationem
+            accusantium! Eos, voluptatem! Eius voluptas reprehenderit amet aperiam vitae, nulla magnam alias assumenda
+            libero debitis fugiat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis beatae eius ea
+            obcaecati quisquam dolor maiores modi impedit porro iste culpa dolore fuga, exercitationem provident earum
+            corrupti doloribus hic omnis!
+            Accusamus minima iste blanditiis, veniam libero, id maxime possimus eum ut quisquam nisi eos doloremque, qui
+            voluptatibus non ea sit est sint a! Similique, saepe architecto! Repellendus molestias nemo aspernatur!
+            Deserunt, nobis tempora. Accusamus illum earum quas porro quibusdam pariatur modi repellat harum possimus
+            dolorum ipsa ratione, explicabo vitae tempore autem cumque ad adipisci quis cum voluptatibus ab velit nam!
+            Quam eveniet saepe exercitationem consequuntur voluptatibus mollitia, ab sunt unde magnam ut quisquam
+            aliquam! Magni, velit suscipit quidem reprehenderit impedit expedita rem tempore, itaque nihil cumque
+            placeat ducimus id ipsum!
+            A porro magnam voluptas dolorum adipisci iure voluptate mollitia eius aliquid et! Sequi dolorum soluta
+            dolore totam distinctio saepe et odio voluptas dolorem blanditiis adipisci autem, doloremque dicta,
+            reiciendis est. </p>
+    </section>
+    <section id="projects">
+        <h2 class="glitch__header center-text margin__header--bottom">Projects</h2>
+        <div class="contact-border">
+            <div class="contact-toolbar">
+                <span class="termina-title">My Projects</span>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="project-folders">
+                <i class="fa-regular fa-folder"></i>
+                <span class="project-names">GrocyGo</span>
+            </div>
+            <div class="project-folders">
+                <i class="fa-regular fa-folder"></i>
+                <span class="project-names">PatDoc</span>
+            </div>
+            <div class="project-folders">
+                <i class="fa-regular fa-folder"></i>
+                <span class="project-names">Terminal</span>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="glitch__header center-text">Contact</h2>
+        <div class="contact-border">
+            <div class="contact-toolbar">
+                <span class="termina-title">Contact Terminal</span>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+            <div id="command" onclick="textarea.focus();">
+                <textarea type="text" id="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); 
+                           moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus></textarea>
+                <div id="liner">
+                    <span id="typer"></span><b class="cursor" id="cursor">█</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h6 class="text-center">Feel free to copy</h6>
+    </footer>
 </body>
 
 </html>
