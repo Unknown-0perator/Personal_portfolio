@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
     <script src="https://kit.fontawesome.com/8c2d1b64fa.js" crossorigin="anonymous"></script>
     <title>Ahmad Rashid Akhtar</title>
 </head>
@@ -72,36 +72,99 @@
     </section>
     <section id="projects">
         <h2 class="glitch__header center-text margin__header--bottom">Projects</h2>
-        <div class="contact-border">
-            <div class="contact-toolbar">
-                <span class="termina-title">My Projects</span>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <div class="project-folders">
-                <i class="fa-regular fa-folder"></i>
-                <span class="project-names">GrocyGo</span>
-            </div>
-            <div class="project-folders">
-                <i class="fa-regular fa-folder"></i>
-                <span class="project-names">PatDoc</span>
-            </div>
-            <div class="project-folders">
-                <i class="fa-regular fa-folder"></i>
-                <span class="project-names">Terminal</span>
-            </div>
-            <div>
+        <div class="projects__container">
 
+            <div class="toolbar">
+                <span class="toolbar__title">My Projects</span>
+                <i class="fa-brands fa-github icon"></i>
+                <i class="fa-brands fa-linkedin icon"></i>
+            </div>
+            <div class="projects">
+                <div class="project-allfolders">
+                    <div class="project-folders project-folders--grocygo" data-name="grocygo">
+                        <i class="fa-regular fa-folder"></i>
+                        <span class="project-names">GrocyGo</span>
+                    </div>
+                    <div class="project-folders project-folders--patdoc" data-name="patdoc">
+                        <i class="fa-regular fa-folder"></i>
+                        <span class="project-names">PatDoc</span>
+                    </div>
+                    <div class="project-folders project-folders--terminal" data-name="terminal">
+                        <i class="fa-regular fa-folder"></i>
+                        <span class="project-names">Terminal</span>
+                    </div>
+                </div>
+                <div class="project__details hidden project-details--grocygo">
+                    <div class="toolbar">
+                        <span class="toolbar__title">My Projects</span>
+
+                        <i class="fa-sharp fa-solid fa-rectangle-xmark icon close-btn"></i>
+
+                    </div>
+                    <div class="project__details--content">
+                        <h3 class="projects__details--title">GrocyGo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt, sit perferendis,
+                            suscipit asperiores veritatis totam laudantium, odio vero nisi quidem quaerat hic sunt. Ipsa
+                            quam porro cumque assumenda voluptatum!</p>
+                        <a href="" class="project__details--content--link"><i
+                                class="fa-brands fa-square-github project__details--icon"></i><span
+                                class="project__details--content--link--text">Repo</span></a>
+                        <a href="" class="project__details--content--link"> <i
+                                class="fa-solid fa-globe project__details--icon"></i><span
+                                class="project__details--content--link--text">Live Demo</span></a>
+
+                    </div>
+                </div>
+                <div class="project__details hidden project-details--patdoc">
+                    <div class="toolbar">
+                        <span class="toolbar__title">My Projects</span>
+                        <i class="fa-sharp fa-solid fa-rectangle-xmark icon close-btn"></i>
+
+                    </div>
+                    <div class="project__details--content">
+                        <h3 class="projects__details--title">Pat-Doc</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt, sit perferendis,
+                            suscipit asperiores veritatis totam laudantium, odio vero nisi quidem quaerat hic sunt. Ipsa
+                            quam porro cumque assumenda voluptatum!</p>
+                        <a href="" class="project__details--content--link"><i
+                                class="fa-brands fa-square-github project__details--icon"></i><span
+                                class="project__details--content--link--text">Repo</span></a>
+                        <a href="" class="project__details--content--link"> <i
+                                class="fa-solid fa-globe project__details--icon"></i><span
+                                class="project__details--content--link--text">Live Demo</span></a>
+
+                    </div>
+                </div>
+                <div class="project__details hidden project-details--terminal">
+                    <div class="toolbar">
+                        <span class="toolbar__title">My Projects</span>
+                        <i class="fa-sharp fa-solid fa-rectangle-xmark icon close-btn"></i>
+
+                    </div>
+                    <div class="project__details--content">
+                        <h3 class="projects__details--title">Terminal</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt, sit perferendis,
+                            suscipit asperiores veritatis totam laudantium, odio vero nisi quidem quaerat hic sunt. Ipsa
+                            quam porro cumque assumenda voluptatum!</p>
+                        <a href="" class="project__details--content--link"><i
+                                class="fa-brands fa-square-github project__details--icon"></i><span
+                                class="project__details--content--link--text">Repo</span></a>
+                        <a href="" class="project__details--content--link"> <i
+                                class="fa-solid fa-globe project__details--icon"></i><span
+                                class="project__details--content--link--text">Live Demo</span></a>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section id="contact">
         <h2 class="glitch__header center-text">Contact</h2>
-        <div class="contact-border">
-            <div class="contact-toolbar">
-                <span class="termina-title">Contact Terminal</span>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
+        <div class="contact__container">
+            <div class="toolbar">
+                <span class="toolbar__title">Contact Terminal</span>
+                <i class="fa-brands fa-github icon"></i>
+                <i class="fa-brands fa-linkedin icon"></i>
             </div>
 
             <div id="command" onclick="textarea.focus();">
@@ -114,8 +177,9 @@
         </div>
     </section>
     <footer>
-        <h6 class="text-center">Feel free to copy</h6>
+
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
