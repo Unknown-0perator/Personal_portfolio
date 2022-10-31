@@ -587,6 +587,7 @@ body {
 .project__details--icon {
   font-size: 3rem;
 }
+
 /*CONTACT*/
 /*FOOTER*/
 .header {
@@ -884,4 +885,17 @@ b {
 }
 .white {
   color: #fff;
+}
+
+.fa-github:hover {
+  color: #00ff00;
+  cursor: pointer;
+}
+.fa-linkedin:hover {
+  color: skyblue;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: red;
+  cursor: pointer;
 }
