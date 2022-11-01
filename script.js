@@ -19,3 +19,12 @@ closebtn.forEach((btn) =>
     projectDetails.forEach((pd) => pd.classList.add("hidden"));
   })
 );
+const nav = document.querySelector(".nav");
+const sectionAbout = document.getElementById("about");
+const initialCoords = sectionAbout.getBoundingClientRect();
+console.log(initialCoords);
+window.addEventListener("scroll", function () {
+  console.log(this.window.scrollY);
+  if (this.window.scrollY > initialCoords.top) nav.classList.add("sticky");
+  else nav.classList.remove("sticky");
+});
