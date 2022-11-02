@@ -21,12 +21,10 @@ closebtn.forEach((btn) =>
 );
 
 // Sticky Navbar
-const nav = document.querySelector(".nav");
+const nav = document.querySelector(".navbar");
 const sectionAbout = document.getElementById("about");
 const initialCoords = sectionAbout.getBoundingClientRect();
-console.log(initialCoords);
 window.addEventListener("scroll", function () {
-  console.log(this.window.scrollY);
   if (this.window.scrollY > initialCoords.top) nav.classList.add("sticky");
   else nav.classList.remove("sticky");
 });
@@ -233,3 +231,10 @@ function loopLines(name, style, time) {
     addLine(item, style, index * time);
   });
 }
+
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+});
