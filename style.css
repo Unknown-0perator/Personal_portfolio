@@ -805,8 +805,10 @@ p {
 
 .contact__container {
   width: auto;
-  min-height: 50rem;
+  height: 50rem;
   border: #fff solid 0.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .toolbar {
@@ -871,7 +873,7 @@ b {
 }
 #liner::before {
   color: #ffffff;
-  content: "Hey, what is your name?";
+  content: "Unknown-0perator: ";
 }
 
 /* Cursor End */
@@ -907,4 +909,7 @@ b {
 .close-btn:hover {
   color: red;
   cursor: pointer;
+}
+.banner {
+  padding-left: 2rem;
 }
